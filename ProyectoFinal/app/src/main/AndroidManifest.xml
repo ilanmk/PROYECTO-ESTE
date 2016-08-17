@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ilan.proyectofinal">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Gimnasio"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AsignarRutina">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".RutinasInstructor" />
+        <activity android:name=".AgRutina" />
+        <activity
+            android:name=".RutinInstructor"
+            android:label="@string/title_activity_rutin_instructor"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ABMRUTINA" />
+        <activity android:name=".ABMEJERCICIOS" />
+        <activity android:name=".ListarRutina" />
+        <activity android:name=".ListarEjercicio" />
+        <activity android:name=".Menu"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ilan.proyectofinal.Menu"
+    android:background="@drawable/fondito"
+    style="@android:style/Widget.Material.ButtonBar">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar Rutina"
+        android:id="@+id/button8"
+        android:onClick="agregarrutina"
+        android:contextClickable="false"
+        android:background="#199fff"
+        android:elegantTextHeight="true"
+        android:typeface="sans"
+        android:textStyle="italic"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/button9"
+        android:layout_alignStart="@+id/button9" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar Ejercicio"
+        android:id="@+id/button9"
+        android:onClick="agregarejercicio"
+        android:background="#FF199FFF"
+        android:typeface="sans"
+        android:textStyle="italic"
+        android:layout_below="@+id/button8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alta Instruido"
+        android:id="@+id/button10"
+        android:onClick="altainstruido"
+        android:background="#FF199FFF"
+        android:typeface="sans"
+        android:textStyle="italic"
+        android:layout_below="@+id/button11"
+        android:layout_alignRight="@+id/button8"
+        android:layout_alignEnd="@+id/button8"
+        android:layout_marginTop="54dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rutinas"
+        android:id="@+id/button11"
+        android:onClick="rutinas"
+        android:background="#FF199FFF"
+        android:typeface="sans"
+        android:textStyle="italic"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/button10"
+        android:layout_alignEnd="@+id/button10" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ABMEJ"
+        android:id="@+id/button22"
+        android:background="#FF199FFF"
+        android:layout_below="@+id/button10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="ABMEJ" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ABMRUT"
+        android:id="@+id/button23"
+        android:background="#FF199FFF"
+        android:layout_below="@+id/button10"
+        android:layout_toRightOf="@+id/button9"
+        android:layout_toEndOf="@+id/button9"
+        android:onClick="ABMRUT" />
+</RelativeLayout>
